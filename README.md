@@ -4,6 +4,16 @@
 ## **Overview**  
 This project showcases the implementation of a Medallion Architecture for a data engineering workflow. The architecture processes raw data, applies incremental data loading, and transforms it into a star schema for analytics using Azure tools.
 
+### **Objective**  
+To design and implement a scalable data engineering solution that follows the Medallion Architecture principles, enabling efficient data ingestion, transformation, and analysis.
+
+### **Key Features**  
+- Implements a **Medallion Architecture** with Bronze, Silver, and Gold layers for data processing.  
+- Automates data ingestion from GitHub into Azure SQL Database using Azure Data Factory.  
+- Enables **incremental data loading** into Azure Data Lake Gen 2.  
+- Performs data transformation and cleaning using Azure Databricks notebooks and workflows.  
+- Builds a **Star Schema** with SCD Type-1 for analytics-ready datasets.
+
 ---
 
 ## **Technologies Used**  

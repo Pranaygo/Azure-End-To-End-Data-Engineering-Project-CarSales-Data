@@ -1,5 +1,11 @@
 # **Azure-End-To-End-Data-Engineering-Project-CarSales-Data With Medallion Architecture**
 
+## **Architecture Diagram**  
+Below is the architecture diagram illustrating the flow of data through the Medallion Architecture.  
+
+![image](https://github.com/user-attachments/assets/4fe90069-f8e9-4658-abcf-1e0264518172)
+
+---
 
 ## **Overview**  
 This project showcases the implementation of a Medallion Architecture for a data engineering workflow. The architecture processes raw data, applies incremental data loading, and transforms it into a star schema for analytics using Azure tools.
@@ -43,13 +49,6 @@ To design and implement a scalable data engineering solution that follows the Me
      - **Fact Table:** Contains transactional data.  
      - **Dimension Tables:** Contain descriptive attributes.  
    - SCD Type-1 is implemented for handling updates to dimension tables.  
-
----
-
-## **Architecture Diagram**  
-Below is the architecture diagram illustrating the flow of data through the Medallion Architecture.  
-
-![image](https://github.com/user-attachments/assets/4fe90069-f8e9-4658-abcf-1e0264518172)
  
 
 ---

@@ -39,7 +39,8 @@ This project showcases the implementation of a Medallion Architecture for a data
 ## **Architecture Diagram**  
 Below is the architecture diagram illustrating the flow of data through the Medallion Architecture.  
 
-![Architecture Diagram](path/to/architecture-diagram.png)  
+![image](https://github.com/user-attachments/assets/4fe90069-f8e9-4658-abcf-1e0264518172)
+ 
 
 ---
 

@@ -58,11 +58,15 @@ To design and implement a scalable data engineering solution that follows the Me
 
 ### **Pipeline 1: Data Ingestion**  
 This pipeline moves raw data from GitHub into Azure SQL Database.  
-![Pipeline 1 Diagram](path/to/pipeline-1-diagram.png)  
+![image](https://github.com/user-attachments/assets/55ef7742-7be6-496b-8141-3596286c377d)
+
 
 ### **Pipeline 2: Incremental Loading**  
 This pipeline manages incremental data loading into the Bronze container.  
-![Pipeline 2 Diagram](path/to/pipeline-2-diagram.png)  
+![image](https://github.com/user-attachments/assets/4ff1d24b-b6d5-40a3-842f-358552270969)
+
+### **Azure Databricks Workflow: Incremental Loading**  
+ 
 
 ---
 

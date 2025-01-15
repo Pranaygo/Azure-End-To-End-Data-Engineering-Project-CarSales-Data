@@ -1,5 +1,9 @@
 # **Azure-End-To-End-Data-Engineering-Project-CarSales-Data With Medallion Architecture**
 
+This repository showcases an end-to-end Azure Data Engineering project where the Medallion Architecture is implemented for processing and transforming car sales data. It demonstrates the use of Azure services like Data Factory, Databricks, and Data Lake Gen 2 to build a scalable data pipeline.
+
+The project involves creating a clean data pipeline from raw data ingestion to transformation and analysis-ready datasets. The repository contains the implementation, data transformation notebooks, SQL scripts, and architecture diagrams.
+
 ## **Architecture Diagram**  
 Below is the architecture diagram illustrating the flow of data through the Medallion Architecture.  
 
@@ -18,7 +22,7 @@ To design and implement a scalable data engineering solution that follows the Me
 - Automates data ingestion from GitHub into Azure SQL Database using Azure Data Factory.  
 - Enables **incremental data loading** into Azure Data Lake Gen 2.  
 - Performs data transformation and cleaning using Azure Databricks notebooks and workflows.  
-- Builds a **Star Schema** with SCD Type-1 for analytics-ready datasets.
+- Builds a **Star Schema** with **Fact** and **Dimension Tables** using Databricks workflow and implements SCD Type-1 for analytics-ready datasets.
 
 ---
 
@@ -44,12 +48,9 @@ To design and implement a scalable data engineering solution that follows the Me
    - Data is cleaned and transformed using Azure Databricks notebooks.  
    - Transformed data is stored in Silver and Gold containers.  
 
-4. **Star Schema Design:**  
-   - One table is broken into:  
-     - **Fact Table:** Contains transactional data.  
-     - **Dimension Tables:** Contain descriptive attributes.  
+4. **Star Schema Design and Workflow Execution:**  
+   - The **Dimension Tables** and **Fact Table** are created using Azure Databricks workflow.  
    - SCD Type-1 is implemented for handling updates to dimension tables.  
- 
 
 ---
 

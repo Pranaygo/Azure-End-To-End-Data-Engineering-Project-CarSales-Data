@@ -75,4 +75,4 @@ This pipeline manages incremental data loading into the Bronze container.
 
 ---
 
-## **Folder Structure**  
+

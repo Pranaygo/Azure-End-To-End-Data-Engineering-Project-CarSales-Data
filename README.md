@@ -65,7 +65,7 @@ This pipeline moves raw data from GitHub into Azure SQL Database.
 This pipeline manages incremental data loading into the Bronze container.  
 ![image](https://github.com/user-attachments/assets/4ff1d24b-b6d5-40a3-842f-358552270969)
 
-### **Azure Databricks Workflow: Incremental Loading**  
+### **Azure Databricks Workflow: dimensions and fact tables**  
 
  ![image](https://github.com/user-attachments/assets/fa3c1295-5e00-42ce-aedc-d3b47a558f02)
 

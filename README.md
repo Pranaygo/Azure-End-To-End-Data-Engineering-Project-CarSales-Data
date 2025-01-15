@@ -75,4 +75,60 @@ This pipeline manages incremental data loading into the Bronze container.
 
 ---
 
+## **How to Run This Project**
+
+To run this project, follow the steps outlined below. Ensure you meet the prerequisites and have the necessary permissions and configurations set up in your Azure environment.
+
+### **Prerequisites**
+
+- **Azure Subscription:** You need an active Azure subscription to use Azure services such as Azure Data Factory, Azure Databricks, and Azure Data Lake Gen 2.
+- **Azure Data Factory (ADF):** Basic understanding of ADF to manage and execute pipelines.
+- **Azure Databricks Workspace:** A Databricks workspace to run notebooks and workflows.
+- **GitHub Account:** For data ingestion from GitHub (if using the raw data source).
+- **Azure CLI:** Installed and configured for managing Azure resources (optional for advanced users).
+- **Azure SQL Database:** For storing and processing raw data.
+- **Python (Optional):** For additional transformations and scripts in Databricks if needed.
+
+### **Steps to Run the Project**
+
+1. **Set Up Azure Data Factory (ADF):**
+   - **Create Pipelines:**  
+     Set up two pipelines in Azure Data Factory:
+     - **Pipeline 1**: For ingesting data from GitHub into Azure SQL Database.
+     - **Pipeline 2**: For incremental data loading into Azure Data Lake Gen 2 (Bronze layer).
+   - **Configure Linked Services:**  
+     Set up Linked Services for the following:
+     - GitHub (for raw data ingestion).
+     - Azure SQL Database.
+     - Azure Data Lake Gen 2.
+
+2. **Set Up Azure Databricks:**
+   - **Create a Databricks Workspace:**  
+     Set up an Azure Databricks workspace and configure the clusters.
+   - **Import Notebooks:**  
+     Import the Databricks notebooks for data transformation, which include:
+     - Bronze to Silver transformation.
+     - Silver to Gold transformation.
+   - **Run Notebooks:**  
+     Execute the notebooks in the workspace for data processing, transformation, and loading into the Gold layer.
+
+3. **Verify Data Storage:**
+   - **Azure SQL Database:**  
+     Check if the raw data from GitHub has been loaded into the Azure SQL Database.
+   - **Azure Data Lake Gen 2:**  
+     Verify that the data has been correctly loaded into the Bronze container, processed in the Silver container, and transformed into the Gold container.
+
+4. **Star Schema Design:**
+   - **Run the Databricks Workflow:**  
+     Execute the workflow in Databricks to create the Star Schema and implement SCD Type-1 for dimension updates.
+   - **Verify Fact and Dimension Tables:**  
+     Ensure that the Fact table and Dimension tables are created as expected.
+
+5. **Optional - Customize and Extend:**
+   - Modify the notebooks or pipelines to suit your specific use case or extend the functionality.
+   - Implement further data quality checks, automation, or scheduling based on your needs.
+
+### **Post-Execution**
+
+After running the pipelines and transformations, you should see the final processed data in the Gold layer, ready for analytics and reporting.
 

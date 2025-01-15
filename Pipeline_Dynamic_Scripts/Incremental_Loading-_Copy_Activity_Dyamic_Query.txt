@@ -1,0 +1,1 @@
+SELECT * FROM source_cars_data WHERE Date_ID>'@{activity('Last_Load').output.value[0].last_load}' AND Date_ID <= '@{activity('Current_Load').output.value[0].max_id}'

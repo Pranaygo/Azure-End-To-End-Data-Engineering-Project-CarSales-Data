@@ -69,6 +69,9 @@ This pipeline manages incremental data loading into the Bronze container.
 
  ![image](https://github.com/user-attachments/assets/fa3c1295-5e00-42ce-aedc-d3b47a558f02)
 
+### **Azure SQL Database: Tables and StoredProcedures**  
+
+![image](https://github.com/user-attachments/assets/abea55b8-9a30-48f4-b633-c200d312fcbc)
 
 ---
 

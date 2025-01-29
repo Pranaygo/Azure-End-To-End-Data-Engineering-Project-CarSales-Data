@@ -73,6 +73,11 @@ This pipeline manages incremental data loading into the Bronze container.
 
 ![image](https://github.com/user-attachments/assets/abea55b8-9a30-48f4-b633-c200d312fcbc)
 
+### **Azure Resource Group:**  
+
+![image](https://github.com/user-attachments/assets/d7068f49-eec5-45cc-a891-24b8e9d2da85)
+
+
 ---
 
 ## **How to Run This Project**
